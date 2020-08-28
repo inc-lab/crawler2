@@ -29,8 +29,6 @@ module.exports = (async function(array) {
 
 
 
-
-
 	// // -- Отключаем картинки и стили --//
 	// await page.setRequestInterception(true);
 	// page.on('request', request => {
