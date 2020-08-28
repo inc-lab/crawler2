@@ -18,7 +18,7 @@ module.exports = (async function(array) {
     browserPparams.headless = false;//true;
     browserPparams.ignoreHTTPSErrors = true;
     browserPparams.args = ['--ignore-certificate-errors'];
-
+    console.log('test');
     // let proxy = config.proxy;
     // if( proxy ) { browserPparams.args.push('--proxy-server=' + proxy );}// Настройка для прокси
 
