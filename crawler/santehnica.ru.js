@@ -7,8 +7,13 @@ const moment = require('moment');
 const root_path = path.dirname(require.main.filename || process.mainModule.filename);
 const config = require(root_path+'/config/puppeteer.js');
 
+<<<<<<< HEAD
 //new y
 //test2
+=======
+//new branch new commit
+
+>>>>>>> a66e9cc479feab17c8bf20b10b16948fca5b81b0
 
 //--------------------------------------------------------------------------------------//
 module.exports = (async function(array) {
