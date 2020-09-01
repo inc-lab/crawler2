@@ -6,15 +6,6 @@ const moment = require('moment');
 
 const root_path = path.dirname(require.main.filename || process.mainModule.filename);
 const config = require(root_path+'/config/puppeteer.js');
-
-<<<<<<< HEAD
-//new y
-//test2
-=======
-//new branch new commit
-
->>>>>>> a66e9cc479feab17c8bf20b10b16948fca5b81b0
-
 //--------------------------------------------------------------------------------------//
 module.exports = (async function(array) {
     const start= new Date().getTime();
@@ -77,9 +68,9 @@ module.exports = (async function(array) {
                 let $ = cheerio.load(innerHTML);
 
                 //Цена на товар
-                let price =  $('div[itemprop="offers"]').find('meta[itemprop="price"]').attr('content');
+                let price =  $('div[itemprop="offers"]').find('[itemprop="price"]').text();
               //  console.log($('div[itemprop="offers"]').html());
-                //console.log('price:'+price);
+                console.log('price:'+price);
                     price = price && !isNaN(price) ? parseInt(price) : false;
 
                 if( $('[itemprop="offers"]').find('[data-behaviour="get-analog"]').text() ){
